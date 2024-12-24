@@ -27,6 +27,7 @@ async function run() {
 
     const database = client.db("restaurant-app");
     const menuCollection = database.collection("menu");
+    const userCollection = database.collection("users");
     const reviewCollection = database.collection("reviews");
     const cartCollection = database.collection("carts");
 
@@ -37,6 +38,13 @@ async function run() {
 
     app.get("/reviews", async (req, res) => {
       const result = await reviewCollection.find().toArray();
+      res.send(result);
+    });
+
+    // user
+    app.post("/users", async (req, res) => {
+      const user = req.body;
+      const result = await userCollection.insertOne(user);
       res.send(result);
     });
 
