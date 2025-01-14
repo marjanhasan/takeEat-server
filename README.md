@@ -6,13 +6,17 @@ Backend server for the takeEat application, handling data processing, user manag
 
 [![wakatime](https://wakatime.com/badge/user/5225e8ed-9a14-4fe9-b3f5-b0a5b485c255/project/bd8cb4b7-fcf4-43cb-b101-fec87cd048ad.svg)](https://wakatime.com/badge/user/5225e8ed-9a14-4fe9-b3f5-b0a5b485c255/project/bd8cb4b7-fcf4-43cb-b101-fec87cd048ad)
 
+## Important Links
+
+- [Live Link](https://take-eat-marjan.netlify.app/)
+- [Client Repo](https://github.com/marjanhasan/takeEat-client)
+
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [API Endpoints](#api-endpoints)
 - [Contributing](#contributing)
-- [License](#license)
 
 ### Features
 - **User Authentication**: Handles secure login, registration, and role-based authorization.
@@ -43,8 +47,9 @@ Backend server for the takeEat application, handling data processing, user manag
    ```
 4. Create a `.env` file in the root directory and configure your environment variables.
    ```env
-   PORT=5000
-   MONGO_URI=your_mongodb_uri
+   DB_USER=your_userID
+   DB_PASS=your_db_password
+   ACCESS_TOKEN_SECRET=your_access_token_secret
    STRIPE_SECRET_KEY=your_stripe_secret_key
    ```
 5. Start the server.
