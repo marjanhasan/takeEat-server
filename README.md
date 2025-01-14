@@ -52,7 +52,7 @@ The server-side of **takeEat** provides a robust backend for handling authentica
 
 4. Start the server:
    ```bash
-   npm run dev
+   npm start
    ```
 
 ## API Endpoints
